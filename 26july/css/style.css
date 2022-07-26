@@ -1,0 +1,152 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px;
+	/* по умолчанию */
+}
+
+body {
+	line-height: 1;
+	/* color: #000; */
+	/* font-family:""; */
+	font-family: "Roboto";
+	padding: 30px 0px 0px 210px;
+	background: #F5F5F5;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+/* ------------------------------ */
+
+/* .ourpromise {} */
+
+
+.ourpromise__conteiner {
+	max-width: 1440px;
+}
+
+.upper__subtitle {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	align-items: center;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+	margin: 0px 0px 33px 0px;
+}
+
+.upper__subtitle::before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 20px;
+	background: url(../img/icons/Overline\ Mark.png) no-repeat;
+	margin: 0px 30px 0px 0px;
+}
+
+.main__title {
+	display: inline-block;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000000;
+	margin: 0px 0px 68px 0px;
+}
+
+.main__title::after {
+	content: "";
+	display: block;
+	height: 5px;
+	background-color: #F2726F;
+	opacity: 0.6;
+	width: 50%;
+	margin: 15px 0px 0px 0px;
+}
+
+.items {
+	margin: 0px auto;
+}
+
+.item__conteiner {
+	display: inline-block;
+	width: 25%;
+}
+
+.img__block {
+	display: inline-block;
+	max-width: 63px;
+	max-height: 63px;
+	vertical-align: top;
+	margin: 0px 23px 0px 0px;
+}
+
+.text__body {
+	display: inline-block;
+	max-width: 235px;
+}
+
+.text__title {
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	color: #F2726F;
+	margin: 0px 0px 20px 0px;
+}
+
+.text__regular {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+}
