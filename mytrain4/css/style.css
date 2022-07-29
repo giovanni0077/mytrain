@@ -2,7 +2,7 @@
 &display=swap
 &subset=cyrillic-ext 
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900,900&display=swap");
 
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
@@ -48,7 +48,6 @@ body {
 
 html {
 	font-size: 16px;
-	/* по умолчанию */
 }
 
 body {
@@ -56,13 +55,97 @@ body {
 	/* color: #000; */
 	/* font-family:""; */
 	font-family: "Roboto";
-	padding: 30px;
+	padding: 100px;
 	background: #F5F5F5;
 }
 
 .wrapper {
 	min-height: 100%;
-	overflow: hidden;
+	overflow: visible;
 }
 
 /* ------------------------------ */
+
+.ourimpact {
+	max-width: 1440px;
+	margin: 0px auto;
+	font-size: 0px;
+	background: #29C3BE;
+}
+
+.ourimpact__container {
+	display: inline-block;
+	padding: 50px 111px 0px 210px;
+}
+
+.subtitle {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	align-items: center;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin: 0px 0px 32px 0px;
+}
+
+.subtitle::before {
+	content: "";
+	background: url(../img/icons/01.svg) center no-repeat;
+	width: 17px;
+	height: 16px;
+	padding: 0px 50px 0px 0px;
+}
+
+.title {
+	max-width: 411px;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #FFFFFF;
+	margin: 0px 0px 76px 0px;
+}
+
+.ourimpact__img {
+	display: inline-block;
+	vertical-align: top;
+	margin: -100px 0px 0px 0px;
+}
+
+.ourimpact__img--img {
+	border-radius: 12%;
+}
+
+.items__container {
+	text-align: center;
+}
+
+.item {
+	width: 20%;
+	display: inline-block;
+	margin: 0px 0px 134px 0px;
+}
+
+.img__item {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.item__text {
+	display: inline-block;
+}
+
+.item__title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #FFFFFF;
+}
+
+.item__textregular {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #5D62B5;
+}
