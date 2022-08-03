@@ -1,0 +1,294 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900,900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	line-height: 1;
+	color: #000;
+	font-family: "Roboto";
+	overflow-x: hidden;
+	padding: 0px;
+	background: #F5F5F5;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+/* ------------------------------ */
+
+.sport-car {
+	position: relative;
+	min-height: 1200px;
+	background: url(../img/papik-pro-p-doroga-risunok-fon-1.jpg) center / cover no-repeat;
+}
+
+.sport-car__body {
+	animation: move 15s linear infinite 0s;
+}
+
+@keyframes move {
+
+	0% {
+		transform: translate(-1150px, 0px);
+	}
+
+
+	100% {
+		transform: translate(2250px, 0px);
+	}
+}
+
+.sport-car__carcass {
+	position: absolute;
+	top: 700px;
+	left: 150px;
+	width: 961px;
+	height: 401px;
+	border: 5px solid #000;
+	border-radius: 10% 90% 25% 75% / 65% 24% 76% 35%;
+	background: rgba(0, 255, 0);
+	transform: rotate(-3deg);
+}
+
+.sport-car__benzin {
+	position: absolute;
+	top: 735px;
+	left: 255px;
+	width: 51px;
+	height: 51px;
+	border: 5px solid #000;
+	border-radius: 15% 30% 15% 18% / 25% 45% 45% 55%;
+	background: rgba(109, 190, 109, 0.77);
+	box-shadow: 3px 3px 8px 5px rgba(52, 47, 47, 0.597);
+	;
+}
+
+.sport-car__door {
+	position: absolute;
+	top: 795px;
+	left: 507px;
+	width: 251px;
+	height: 251px;
+	border: 5px solid #000;
+	border-radius: 15% 30% 15% 8% / 15% 45% 45% 15%;
+	background: rgba(109, 190, 109, 0.77);
+	box-shadow: 5px 3px 8px 8px rgba(52, 47, 47, 0.597);
+}
+
+.sport-car__glass {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 505px;
+	left: 475px;
+	background: url(../img/passangers.jpg) center / cover;
+	border-radius: 10%;
+	z-index: 1;
+}
+
+.sport-car__light {
+	position: absolute;
+	width: 61px;
+	height: 31px;
+	top: 793px;
+	left: 1086px;
+	background-color: yellow;
+	border: 5px solid #000;
+	border-radius: 48% 52% 0% 100% / 100% 100% 0% 0%;
+	z-index: 2;
+	transform: rotate(93deg);
+	box-shadow: 3px 3px 28px 18px rgba(236, 190, 7, 0.597);
+}
+
+.sport-car__bumper {
+	position: absolute;
+	height: 30px;
+	width: 65px;
+	border-radius: 40%;
+	border: 3px solid black;
+	top: 934px;
+	left: 1023px;
+	background-color: rgb(247, 244, 244);
+	z-index: 3;
+	box-shadow: 2px 2px 15px 2px rgba(211, 194, 193, 0.597);
+}
+
+.sport-car__light-two {
+	position: absolute;
+	height: 41px;
+	width: 90px;
+	border-radius: 40%;
+	border: 3px solid black;
+	top: 841px;
+	left: 118px;
+	background-color: rgb(216, 19, 19);
+	transform: rotate(-81deg);
+	box-shadow: 3px 3px 28px 18px rgba(255, 17, 0, 0.597);
+}
+
+.sport-car__handle {
+	position: absolute;
+	top: 837px;
+	left: 533px;
+	width: 41px;
+	height: 16px;
+	border: 5px solid #000;
+	border-radius: 15% 30% 15% 8% / 15% 45% 45% 15%;
+	background: rgba(0, 0, 0, 0.77);
+	box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 1);
+	z-index: 4;
+}
+
+.sport-car__fender-one {
+	position: absolute;
+	top: 967px;
+	left: 251px;
+	width: 250px;
+	height: 121px;
+	border: 10px solid rgb(57, 57, 57);
+	border-radius: 49% 51% 50% 50% / 100% 100% 0% 0%;
+	box-shadow: 1px 1px 11px 6px rgba(0, 0, 0, 1);
+	background: rgb(57, 57, 57);
+	transform: rotate(6deg);
+	z-index: 1;
+}
+
+.sport-car__wheel {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 999px;
+	left: 267px;
+	border-radius: 50%;
+	border: 5px solid #000;
+	background: rgb(46, 45, 45);
+	z-index: 2;
+}
+
+.sport-car__fender-two {
+	position: absolute;
+	top: 970px;
+	left: 735px;
+	width: 250px;
+	height: 121px;
+	border: 10px solid rgb(57, 57, 57);
+	border-radius: 49% 51% 50% 50% / 100% 100% 0% 0%;
+	box-shadow: 1px 1px 11px 6px rgba(0, 0, 0, 1);
+	background: rgb(57, 57, 57);
+	transform: rotate(-7deg);
+	z-index: 1;
+}
+
+.sport-car__wheel-two {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 999px;
+	left: 767px;
+	border-radius: 50%;
+	border: 5px solid #000;
+	background: rgb(46, 45, 45);
+	z-index: 2;
+}
+
+.sport-car__icon-one-wheel {
+	position: absolute;
+	top: 1050px;
+	left: 818px;
+	width: 100px;
+	height: 100px;
+	background: url(../img/bmw-logo-2.png) center / cover no-repeat;
+	z-index: 3;
+	animation: wheelone 3s 0s infinite linear;
+}
+
+.sport-car__icon-two-wheel {
+	position: absolute;
+	top: 1050px;
+	left: 315px;
+	width: 100px;
+	height: 100px;
+	background: url(../img/bmw-logo-2.png) center / cover no-repeat;
+	z-index: 3;
+	animation: wheeltwo 3s 0s infinite linear;
+}
+
+@keyframes wheelone {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes wheeltwo {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.sport-car__roof {
+	position: absolute;
+	top: 469px;
+	left: 320px;
+	width: 528px;
+	height: 251px;
+	border: 5px solid #000;
+	border-radius: 48% 52% 0% 100% / 100% 100% 0% 0%;
+	background: rgba(134, 153, 134, 0.77);
+}
